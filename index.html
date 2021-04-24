@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Domains</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <div class="intro">
+            <h1>Green <span id="headerspan">Domain</span> Search</h1>
+            <p class="intropara">Did you know that every website and host has a carbon footprint? <br> <br>As ever more of the global population crosses the digital divide, spending their work and leisure hours online, the impact of our online world expands. Like most environmental
+                issues, energy inefficiency and waste are hard to see, even moreso when it's dematerialized in bits and bytes. <br> <br>However,
+                <a href="https://energy.mit.edu/wp-content/uploads/2016/06/Low-Carbon-Web.pdf">metrics</a> have been developed recently to rate the carbon impact and energy sources of websites and their hosts. <a href="https://www.thegreenwebfoundation.org">Green Web Foundation</a>                has collected a robust, opensource database of these resources and they are here now at your fingertips.
+                <br> <br>Enter the website url you would like to check and our API will return if the webhost and website are truly green. </p>
+        </div>
+        <div class="searchFormDiv">
+            <!--SEARCH FORM-->
+            <form id="urlSearchForm">
+                <p>
+                    <!--the only required input is the url search term-->
+                    <label for="searchBox">Enter a url in the search box below. Do not include the transmission protocol (https or http)</label><br><br>
+                    <input type="text" id="searchBox" require="required" placeholder="www.google.com or google.com if you're lazy">
+                </p>
+                <p>
+                    <br>
+                    <button id="submitBtn">CHECK DOMAIN</button>
+                </p>
+            </form>
+        </div>
+        <div class="displayResultsDiv">
+            <p id="introResults">
+                <ul id="resultsList">
+                    <li id="name">
+                    </li>
+
+                    <li id="host">
+
+                    </li>
+                    <li id="green">
+
+                    </li>
+
+                </ul>
+            </p>
+            <div class="imageDisplay">
+                <img id="imagetrue" src=" ">
+                <img id="imagefalse" src=" ">
+            </div>
+            <div class="footer">
+                <p class="footerinfo">
+                    // updated April 2021 //
+                    <a href="https://wwww.incirculytics.com">incirculytics</a> //
+                    <a href="https://www.thegreenwebfoundation.org">Green Web Foundation</a> //
+                </p>
+            </div>
+        </div>
+        <script src="gwfapi.js">
+        </script>
+</body>
+
+</html>
